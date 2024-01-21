@@ -1,0 +1,45 @@
+print(''' ********************************************************************************
+*                    /   \              /'\       _                              *
+*\_..           /'.,/     \_         .,'   \     / \_                            *
+*    \         /            \      _/       \_  /    \     _                     *
+*     \__,.   /              \    /           \/.,   _|  _/ \                    *
+*          \_/                \  /',.,''\      \_ \_/  \/    \                   *
+*                           _  \/   /    ',../',.\    _/      \                  *
+*             /           _/m\  \  /    |         \  /.,/'\   _\                 *
+*           _/           /MMmm\  \_     |          \/      \_/  \                *
+*          /      \     |MMMMmm|   \__   \          \_       \   \_              *
+*                  \   /MMMMMMm|      \   \           \       \    \             *
+*                   \  |MMMMMMmm\      \___            \_      \_   \            *
+*                    \|MMMMMMMMmm|____.'  /\_            \       \   \_          *
+*                    /'.,___________...,,'   \            \   \        \         *
+*                   /       \          |      \    |__     \   \_       \        *
+*                 _/        |           \      \_     \     \    \       \_      *
+*                /                               \     \     \_   \        \     *
+*                                                 \     \      \   \__      \    *
+*                                                  \     \_     \     \      \   *
+*                                                   |      \     \     \      \  *
+*                                                    \ms          |            \ *
+ ********************************************************************************
+''')
+print("Deep within the heart of the Stonewind Mountains lies a cavern of mysterious and foreboding beauty.\nThe entrance, concealed by hanging vines and moss-covered rocks,\nleads adventurers into a vast underground realm that echoes with the whispers of unseen forces.")
+
+adventurer = input("Greetings, brave adventurer! I perceive an adventurous spirit shining through your eyes.\nWould you be interested in venturing into the cave’s depths, and discovering the mysteries that await within?\nEnter yes or no: ")
+
+if adventurer == "yes":
+  print("\nYou navigate the winding passages, and come across a sprawling chamber known as the Crystal Veil.\nStalactites hang like shimmering icicles from the ceiling, reflecting the dim light in a myriad of colors.\nIn the center of the chamber, a crystal-clear pool mirrors the stalactites above, creating an illusion of a starlit sky trapped within the depths of the earth.")
+  travel = input("Do you swim across the crystal pool or look for a boat?\nEnter swim or boat: ")
+  if travel == "boat":
+    print("\nAs you approach the crystal pond, you find a meticulously crafted boat resting at the water's edge. You enter the boat as it begins to glide effortlessly across the pool. The water beneath the boat sparkles with reflections of the fungi and crystals that adorn the cavern walls, creating a mesmerizing dance of colors. As you contemplate the mystical wonders around you, the boat reaches the dock on the other side. As you disembark you notice 3 obsidian skinned elves with silver hair approaching. You have heard of these elves, the Shadowblades. Experts in stealth and exceptional in dual-wielding combat.\n\nYou have 3 options, which do you choose?\nOption 1: Stand aside elf, I am here to explore this cavern.\nOption 2: Greetings Shadowblades, I am but a humble adventurer seeking the mysteries of this cavern.\nOption 3: Hello fellow travelers, I am seeking the wonders of this cavern, would you like to explore together?")
+    shadowblades = input("Choose 1, 2, or 3: ")
+    if shadowblades == "2": 
+      print("You have befriended the elves and obtained all the wisdom of the crystal cavern!")
+    elif shadowblades == "3":
+      print("\nThe adventurers, masking their true motives, accompany the Shadowblades as they explore the cavern. However, the party secretly marks hidden paths and takes note of strategic locations. The Shadowblades, perceptive to the subtle signs of deception, start to sense the adventurers' ulterior motives.\nEventually, Vaelis confronts the adventurers about their true intentions.\n\nVaelis: 'Your actions speak louder than words. You sought to exploit our knowledge. Our trust is broken.'\n\nThe shadowblades attack...game over!")
+    else: 
+      print("With a cold gaze the elves state, 'Explorers, trespassers, it matters not. You will not pass.' Without warning, the shadowblades draw their weapons. The cavern's silence is shattered by the clash of steel and the echoes of elven battle cries.\n Game Over.")
+  else: 
+    print("\nYou are halfway across the pool when you see two eyes gleaming with an ominous red glow, as a sinuous form that seems to absorb light emerges from the lake right in front of you. You have awakened the Obsidian Shade from its slumber. Driven by a malevolent desire to punish intruders of the crystal pool, he drags you down into the dark abyss.\nGame over.")
+else: 
+  print("You wander back to the tavern in town for another drink.\nGame over.")
+
+#https://ascii.co.uk/art/cave 
